@@ -1,0 +1,158 @@
+/* Universal Styles */
+
+* {
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h4 {
+    color: black;
+    font-family: serif;
+}
+
+
+/* NAVIGATION STYLES */
+
+.bg-img {
+    position: relative;
+    background-color: inherit;
+    overflow: hidden;
+}
+
+.bg-img::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.1;
+    background-image: url('../images/cinci-skyline.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+
+.white-on-black {
+    color: white;
+    padding-left: 10px;
+}
+
+
+/* LOCATION:   STYLING */
+
+
+/* Use this to hide an element */
+
+.hidden-view {
+    visibility: hidden;
+}
+
+
+/* Make <div> for different locatins invisible and appear when clicked --no JS */
+
+#cincinnati,
+#columbus,
+#louisville {
+    visibility: hidden;
+}
+
+#cincinnati:target,
+#columbus:target,
+#louisville:target {
+    visibility: visible;
+}
+
+
+/*.tooltip .content {-webkit-transform: translateX(-50%) translateY(-100%);
+transform: translateX(-50%) translateY(25%);
+}*/
+
+.sdf:hover {
+    color: #0E9171;
+}
+
+.cvg:hover {
+    color: #8A68A5;
+}
+
+.cmh:hover {
+    color: #F0B626;
+}
+
+.tooltip .content.sdf {
+    background-color: #0E9171;
+}
+
+.tooltip .content.cvg {
+    background-color: #8A68A5;
+}
+
+.tooltip .content.cmh {
+    background-color: #F0B626;
+}
+
+
+/* FORM STYLING */
+
+form,
+label,
+input,
+select,
+option,
+button {
+    display: inline-block;
+}
+
+label {
+    font-weight: normal;
+}
+
+fieldset {
+    border: 1px groove grey;
+    padding: 1rem;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.button {
+    margin: 10px;
+    float: right;
+}
+
+
+/* Nav Bar Styling */
+
+#header-title {
+    display: block;
+    float: left;
+}
+
+#header-nav {
+    display: block;
+    float: right;
+}
+
+#header-nav li {
+    display: inline;
+}
+
+.nav-bar h6 {
+    margin: 0px 0px 8px 0px;
+    padding: 0px;
+    border: 0px 0px 8px 0px;
+    line-height: 1rem;
+}
+
+.artists-logo {
+    font-family: serif;
+}
