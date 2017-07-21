@@ -9,6 +9,13 @@ a {
     color: black;
 }
 
+a:focus,
+a:hover {
+    text-decoration: none;
+    border: none;
+    color: black;
+}
+
 
 /* NAVIGATION STYLES */
 
@@ -55,7 +62,8 @@ a {
 transform: translateX(-50%) translateY(25%);
 }*/
 
-.tooltip .content.sdf {
+
+/* .tooltip .content.sdf {
     background-color: #0E9171;
 }
 
@@ -65,7 +73,7 @@ transform: translateX(-50%) translateY(25%);
 
 .tooltip .content.cmh {
     background-color: #F0B626;
-}
+} */
 
 .sdf:hover {
     color: #0E9171;
@@ -82,102 +90,8 @@ transform: translateX(-50%) translateY(25%);
 
 /* IMAGE CAROUSEL */
 
-
-/* .orbit-img img {
+.orbit-img img {
     height: max-content;
-} */
-
-
-/* .slides {
-    margin: auto;
-} */
-
-
-/* Customize Slick Slider */
-
-
-/* .slick-dots {
-    bottom: 20px;
-}
-
-.slick-dots li button::before {
-    font-size: 16px;
-    color: white;
-} */
-
-
-/*Slides*/
-
-
-/* .slides {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto 40px;
-}
-
-.slide {
-    width: 100%;
-    height: 100%;
-}
-
-.slide h2 {
-    margin: 25% 0 20px;
-    color: #fff;
-}
-
-.slide p {
-    width: 60%;
-    margin: 0 20% 40px;
-    font-size: 26px;
-    color: #fff;
-}
-
-.slide .button {
-    color: #fff;
-    border-color: #fff;
-    opacity: .6;
-}
-
-.slide .button:hover {
-    opacity: 1;
-}
-
-.slide img {
-    width: 50%;
-    margin: 100px 50% 100px 10%;
-} */
-
-.bgcvg {
-    background-image: url("../img/loc/cvg-skyline.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    z-index: 0;
-}
-
-.bgcmh {
-    background-image: url("../img/loc/cmh-skyline.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    z-index: 0;
-}
-
-bgsdf {
-    background-image: url("../img/loc/sdf-skyline.jpg");
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    z-index: 0;
-}
-
-.purple {
-    background: #8A68A5;
-}
-
-.green {
-    background: #0E9171;
-}
-
-.yellow {
-    background: #F0B626;
 }
 
 
@@ -212,28 +126,7 @@ legend {
 }
 
 
-/* Nav Bar Styling */
-
-#header-title {
-    display: block;
-    float: left;
-}
-
-#header-nav {
-    display: block;
-    float: right;
-}
-
-#header-nav li {
-    display: inline;
-}
-
-.nav-bar h6 {
-    margin: 0px 0px 8px 0px;
-    padding: 0px;
-    border: 0px 0px 8px 0px;
-    line-height: 1rem;
-}
+/* Use serif for 'Artist's Agency' */
 
 .artists-logo {
     font-family: serif;
