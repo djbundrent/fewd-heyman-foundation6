@@ -17,7 +17,8 @@ h4 {
 
 /* NAVIGATION STYLES */
 
-.bg-img {
+
+/* .bg-img {
     position: relative;
     background-color: inherit;
     overflow: hidden;
@@ -37,11 +38,19 @@ h4 {
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: cover;
-}
+} */
 
 .white-on-black {
     color: white;
     padding-left: 10px;
+}
+
+.top-bar {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-bar ul {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -96,6 +105,10 @@ transform: translateX(-50%) translateY(25%);
 
 .tooltip .content.cmh {
     background-color: #F0B626;
+}
+
+.orbit-img img {
+    height: max-content;
 }
 
 
