@@ -8,6 +8,7 @@
     <title>Artist's Agency | Heyman Talent Agency</title>
     <link rel="stylesheet" type="text/css" href="css/foundation.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/app.css">
 </head>
 
@@ -38,7 +39,7 @@
                         <a href="#" id="browse-menu">Browse</a>
                         <ul class="submenu menu vertical" data-submenu>
                             <li><a href="#about-us">About Us</a></li>
-                            <li><a href="#submissions">Submissions</a></li>
+                            <li><a href="javascript:ShowContent('submission-form')">Submissions</a></li>
                             <li><a href="#contact-us">Contact Us</a></li>
                         </ul>
                     </li>
@@ -67,9 +68,9 @@
 
     <!-- LOCATIONS | ABOUT US -->
 
-    <!-- <div class="orbit" role="region" aria-label="Heyman Talent Agency Locations" data-orbit>
+    <div class="orbit" role="region" aria-label="Heyman Talent Agency Locations" data-orbit>
         <ul class="orbit-container">
-            <!-- Previous and Next Buttons, Hide for Small Displays >
+            <!-- Previous and Next Buttons, Hide for Small Displays -->
             <button class="orbit-previous show-for-medium">
               <span class="show-for-sr">
                 Previous Image
@@ -84,7 +85,7 @@
               &#9654;&#xFE0E;
             </button>
 
-            <!-- Locations depicted by Skyline >
+            <!-- Locations depicted by Skyline -->
             <li class="orbit-slide is-active">
                 <img class="orbit-image" src="./img/loc/cvg-skyline.jpg" alt="Cincinnati Skyline">
             </li>
@@ -98,7 +99,7 @@
             </li>
         </ul>
 
-        <!-- Navigation for Slides, Bullets >
+        <!-- Navigation for Slides, Bullets -->
         <nav class="orbit-bullets">
             <button class="is-active" data-slide="0">
           <span class="show-for-sr">First Slide</span>
@@ -113,9 +114,52 @@
         </button>
 
         </nav>
+    </div>
 
+    <!-- <div class="slides">
 
+        <div class="slide green">
+            <div class="bgcmh">
+                <p>Heyman Talent Columbus</p>
+                <p>772 N High Street</p>
+                <p>Suite 207</p>
+                <p>Columbus, OH 43215</p>
+            </div>
+        </div>
+        <!--/Slide 1 >
+
+        <div class="slide purple">
+            <div class="bgcvg">
+                <p>Heyman Talent Agency</p>
+                <p>700 W Pete Rose Way</p>
+                <p>Suite 434</p>
+                <p>Cincinnati, OH 45203</p>
+            </div>
+        </div>
+        <!--/Slide 2 >
+
+        <div class="slide yellow">
+            <div class="bgsdf">
+                <p>Heyman Talent Louisville</p>
+                <p>1205 E Washington Street</p>
+                <p>Suite 107</p>
+                <p>Louisville, KY 40206</p>
+            </div>
+        </div>
+        <!--/Slide 3 >
     </div> -->
+
+    <!-- <div>
+            <div class="image"><img src="img/loc/cvg-skyline.jpg" alt="Cincinnati Skyline"></div>
+        </div>
+
+        <div>
+            <div class="image"><img src="img/loc/cmh-skyline.jpg" alt="Columbus Skyline"></div>
+        </div>
+
+        <div>
+            <div class="image"><img src="img/loc/sdf-skyline.jpg" alt="Louisville Skyline"></div>
+        </div> -->
 
 
     <!-- FLEX X,Y GRID -->
@@ -123,7 +167,7 @@
     <div class="grid-y">
         <div class="cell" style="margin-top: 25%">
             <a href="index.html" id="about-us">
-                <h4>Artists' Agency</h4>
+                <h4 class="artists-logo">Artists' Agency</h4>
                 <h1>Heyman Talent</h1>
             </a>
             <hr>
@@ -172,9 +216,9 @@
 
     <!-- SUBMISSION FORM
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="grid-x">
-        <div class="small-12 medium-4 medium-offset-1 cell" id="submission-form">
-            <h3><strong><a id="submissions">Submission Info</a></strong></h3>
+    <div class="grid-x" id="submission-form" style="visibility:hidden;">
+        <div class="small-12 medium-4 medium-offset-1 cell">
+            <h4><strong><a id="submit-details">How to Apply</a></strong></h4>
             <p>
                 We accept submissions for new talent ages 5 and up. We are interested in all looks and ethnicities, whether experienced or not. To be considered for representation, please fill out the Submission Form completely. <br /> <br />
 
@@ -205,7 +249,9 @@
         </div>
 
         <div class="small-12 medium-4 medium-offset-1 cell">
-            <form id="submission-form">
+            <form id="talent-submission-form">
+
+                <h4><strong><a id="submit-info">Submit Your Info</a></strong></h4>
 
                 <!-- SUBMISSION CONTACT INFO -->
                 <fieldset>
